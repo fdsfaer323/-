@@ -1,0 +1,605 @@
+2026-03-11 06:48:17,673 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 06:48:18,051 - aiogram.dispatcher - INFO - Run polling for bot @SecuMMabot id=8684869199 - 'SecuMMa'
+2026-03-11 06:48:28,689 - aiogram.event - INFO - Update id=70023390 is handled. Duration 467 ms by bot id=8684869199
+2026-03-11 06:48:31,759 - aiogram.event - INFO - Update id=70023391 is handled. Duration 468 ms by bot id=8684869199
+2026-03-11 06:48:32,643 - aiogram.event - INFO - Update id=70023392 is handled. Duration 421 ms by bot id=8684869199
+2026-03-11 06:48:33,543 - aiogram.event - INFO - Update id=70023393 is handled. Duration 406 ms by bot id=8684869199
+2026-03-11 06:48:34,833 - aiogram.event - INFO - Update id=70023394 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 06:48:35,737 - aiogram.event - INFO - Update id=70023395 is handled. Duration 389 ms by bot id=8684869199
+2026-03-11 06:48:37,500 - aiogram.event - INFO - Update id=70023396 is handled. Duration 405 ms by bot id=8684869199
+2026-03-11 06:48:38,570 - aiogram.event - INFO - Update id=70023397 is handled. Duration 467 ms by bot id=8684869199
+2026-03-11 06:48:39,381 - aiogram.event - INFO - Update id=70023398 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 06:48:40,350 - aiogram.event - INFO - Update id=70023399 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:48:41,909 - aiogram.event - INFO - Update id=70023400 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:48:42,994 - aiogram.event - INFO - Update id=70023401 is handled. Duration 467 ms by bot id=8684869199
+2026-03-11 06:48:43,910 - aiogram.event - INFO - Update id=70023402 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 06:48:44,968 - aiogram.event - INFO - Update id=70023403 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 06:48:46,225 - aiogram.event - INFO - Update id=70023404 is handled. Duration 422 ms by bot id=8684869199
+2026-03-11 06:49:03,428 - aiogram.event - INFO - Update id=70023405 is not handled. Duration 0 ms by bot id=8684869199
+2026-03-11 06:49:05,307 - aiogram.event - INFO - Update id=70023406 is handled. Duration 515 ms by bot id=8684869199
+2026-03-11 06:49:09,453 - aiogram.event - INFO - Update id=70023407 is handled. Duration 546 ms by bot id=8684869199
+2026-03-11 06:49:10,877 - aiogram.event - INFO - Update id=70023408 is handled. Duration 546 ms by bot id=8684869199
+2026-03-11 06:49:11,736 - aiogram.event - INFO - Update id=70023409 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:49:12,820 - aiogram.event - INFO - Update id=70023410 is handled. Duration 358 ms by bot id=8684869199
+2026-03-11 06:49:14,543 - aiogram.event - INFO - Update id=70023411 is handled. Duration 406 ms by bot id=8684869199
+2026-03-11 06:49:17,360 - aiogram.event - INFO - Update id=70023412 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:49:18,377 - aiogram.event - INFO - Update id=70023413 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:49:19,931 - aiogram.event - INFO - Update id=70023414 is handled. Duration 359 ms by bot id=8684869199
+2026-03-11 06:49:22,977 - aiogram.event - INFO - Update id=70023415 is handled. Duration 547 ms by bot id=8684869199
+2026-03-11 06:49:24,554 - aiogram.event - INFO - Update id=70023416 is handled. Duration 593 ms by bot id=8684869199
+2026-03-11 06:49:30,139 - aiogram.event - INFO - Update id=70023417 is handled. Duration 546 ms by bot id=8684869199
+2026-03-11 06:49:34,262 - aiogram.event - INFO - Update id=70023418 is not handled. Duration 405 ms by bot id=8684869199
+2026-03-11 06:49:34,262 - aiogram.event - ERROR - Cause exception while process update id=70023418 by bot id=8684869199
+TelegramBadRequest: Telegram server says - Bad Request: message to edit not found
+Traceback (most recent call last):
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\code100\mp3bot\main.py", line 1289, in seller_terminate_deal
+    await show_main_menu(callback)
+  File "c:\code100\mp3bot\main.py", line 98, in show_main_menu
+    await obj.message.edit_text(text=text, parse_mode=ParseMode.HTML, reply_markup=kb)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message to edit not found
+2026-03-11 06:49:55,624 - aiogram.event - INFO - Update id=70023419 is handled. Duration 1516 ms by bot id=8684869199
+2026-03-11 06:50:03,848 - aiogram.event - INFO - Update id=70023420 is handled. Duration 469 ms by bot id=8684869199
+2026-03-11 06:50:06,129 - aiogram.event - INFO - Update id=70023421 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 06:50:07,489 - aiogram.event - INFO - Update id=70023422 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:50:09,346 - aiogram.event - INFO - Update id=70023423 is handled. Duration 187 ms by bot id=8684869199
+2026-03-11 06:50:12,153 - aiogram.event - INFO - Update id=70023424 is handled. Duration 407 ms by bot id=8684869199
+2026-03-11 06:55:11,141 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 06:55:11,522 - aiogram.dispatcher - INFO - Run polling for bot @SecuMMabot id=8684869199 - 'SecuMMa'
+2026-03-11 06:55:15,632 - aiogram.event - INFO - Update id=70023425 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 06:55:16,586 - aiogram.event - INFO - Update id=70023426 is handled. Duration 187 ms by bot id=8684869199
+2026-03-11 06:55:19,059 - aiogram.event - INFO - Update id=70023427 is handled. Duration 187 ms by bot id=8684869199
+2026-03-11 06:55:21,448 - aiogram.event - INFO - Update id=70023428 is handled. Duration 171 ms by bot id=8684869199
+2026-03-11 06:55:24,061 - aiogram.event - INFO - Update id=70023429 is handled. Duration 233 ms by bot id=8684869199
+2026-03-11 06:55:27,403 - aiogram.event - INFO - Update id=70023430 is handled. Duration 171 ms by bot id=8684869199
+2026-03-11 06:55:41,317 - aiogram.event - INFO - Update id=70023431 is handled. Duration 265 ms by bot id=8684869199
+2026-03-11 06:58:41,430 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 06:58:41,827 - aiogram.dispatcher - INFO - Run polling for bot @SecuMMabot id=8684869199 - 'SecuMMa'
+2026-03-11 06:58:50,728 - aiogram.event - INFO - Update id=70023432 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 06:58:52,098 - aiogram.event - INFO - Update id=70023433 is handled. Duration 485 ms by bot id=8684869199
+2026-03-11 06:58:53,517 - aiogram.event - INFO - Update id=70023434 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:58:54,295 - aiogram.event - INFO - Update id=70023435 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 06:58:55,489 - aiogram.event - INFO - Update id=70023436 is handled. Duration 202 ms by bot id=8684869199
+2026-03-11 06:58:58,041 - aiogram.event - INFO - Update id=70023437 is handled. Duration 359 ms by bot id=8684869199
+2026-03-11 06:58:58,889 - aiogram.event - INFO - Update id=70023438 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 06:59:00,391 - aiogram.event - INFO - Update id=70023439 is handled. Duration 421 ms by bot id=8684869199
+2026-03-11 06:59:01,731 - aiogram.event - INFO - Update id=70023440 is handled. Duration 672 ms by bot id=8684869199
+2026-03-11 06:59:02,963 - aiogram.event - INFO - Update id=70023441 is handled. Duration 358 ms by bot id=8684869199
+2026-03-11 06:59:04,177 - aiogram.event - INFO - Update id=70023442 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:05,231 - aiogram.event - INFO - Update id=70023443 is handled. Duration 360 ms by bot id=8684869199
+2026-03-11 06:59:05,997 - aiogram.event - INFO - Update id=70023444 is handled. Duration 358 ms by bot id=8684869199
+2026-03-11 06:59:06,934 - aiogram.event - INFO - Update id=70023445 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:07,982 - aiogram.event - INFO - Update id=70023446 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 06:59:11,982 - aiogram.event - INFO - Update id=70023447 is handled. Duration 407 ms by bot id=8684869199
+2026-03-11 06:59:13,132 - aiogram.event - INFO - Update id=70023448 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:14,187 - aiogram.event - INFO - Update id=70023449 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:15,430 - aiogram.event - INFO - Update id=70023450 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:20,912 - aiogram.event - INFO - Update id=70023451 is handled. Duration 547 ms by bot id=8684869199
+2026-03-11 06:59:22,731 - aiogram.event - INFO - Update id=70023452 is handled. Duration 547 ms by bot id=8684869199
+2026-03-11 06:59:23,702 - aiogram.event - INFO - Update id=70023453 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:25,415 - aiogram.event - INFO - Update id=70023454 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:26,305 - aiogram.event - INFO - Update id=70023455 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:27,722 - aiogram.event - INFO - Update id=70023456 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:28,803 - aiogram.event - INFO - Update id=70023457 is handled. Duration 421 ms by bot id=8684869199
+2026-03-11 06:59:30,268 - aiogram.event - INFO - Update id=70023458 is handled. Duration 719 ms by bot id=8684869199
+2026-03-11 06:59:31,755 - aiogram.event - INFO - Update id=70023459 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:33,166 - aiogram.event - INFO - Update id=70023460 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:35,223 - aiogram.event - INFO - Update id=70023461 is handled. Duration 422 ms by bot id=8684869199
+2026-03-11 06:59:37,781 - aiogram.event - INFO - Update id=70023462 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 06:59:38,917 - aiogram.event - INFO - Update id=70023463 is handled. Duration 359 ms by bot id=8684869199
+2026-03-11 06:59:39,885 - aiogram.event - INFO - Update id=70023464 is handled. Duration 358 ms by bot id=8684869199
+2026-03-11 06:59:43,381 - aiogram.event - INFO - Update id=70023465 is handled. Duration 546 ms by bot id=8684869199
+2026-03-11 06:59:45,113 - aiogram.event - INFO - Update id=70023466 is handled. Duration 608 ms by bot id=8684869199
+2026-03-11 06:59:49,626 - aiogram.event - INFO - Update id=70023467 is handled. Duration 546 ms by bot id=8684869199
+2026-03-11 06:59:55,039 - aiogram.event - INFO - Update id=70023468 is not handled. Duration 422 ms by bot id=8684869199
+2026-03-11 06:59:55,040 - aiogram.event - ERROR - Cause exception while process update id=70023468 by bot id=8684869199
+TelegramBadRequest: Telegram server says - Bad Request: message to edit not found
+Traceback (most recent call last):
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\code100\mp3bot\handlers\deals.py", line 736, in seller_terminate_deal
+    await show_main_menu(callback)
+  File "c:\code100\mp3bot\handlers\commands.py", line 46, in show_main_menu
+    await obj.message.edit_text(text=text, parse_mode=ParseMode.HTML, reply_markup=kb)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message to edit not found
+2026-03-11 07:13:04,508 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 07:13:04,923 - aiogram.dispatcher - INFO - Run polling for bot @SecuMMabot id=8684869199 - 'SecuMMa'
+2026-03-11 07:13:05,423 - aiogram.event - INFO - Update id=70023469 is handled. Duration 405 ms by bot id=8684869199
+2026-03-11 07:13:05,424 - aiogram.event - INFO - Update id=70023470 is handled. Duration 405 ms by bot id=8684869199
+2026-03-11 07:13:09,487 - aiogram.event - INFO - Update id=70023471 is handled. Duration 202 ms by bot id=8684869199
+2026-03-11 07:13:10,908 - aiogram.event - INFO - Update id=70023472 is handled. Duration 422 ms by bot id=8684869199
+2026-03-11 07:13:12,268 - aiogram.event - INFO - Update id=70023473 is handled. Duration 407 ms by bot id=8684869199
+2026-03-11 07:13:13,113 - aiogram.event - INFO - Update id=70023474 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:13:14,029 - aiogram.event - INFO - Update id=70023475 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:13:15,040 - aiogram.event - INFO - Update id=70023476 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:13:16,154 - aiogram.event - INFO - Update id=70023477 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:13:17,013 - aiogram.event - INFO - Update id=70023478 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 07:13:17,810 - aiogram.event - INFO - Update id=70023479 is handled. Duration 359 ms by bot id=8684869199
+2026-03-11 07:13:19,215 - aiogram.event - INFO - Update id=70023480 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:25:29,120 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 07:25:29,492 - aiogram.dispatcher - INFO - Run polling for bot @SecuMMabot id=8684869199 - 'SecuMMa'
+2026-03-11 07:25:34,723 - aiogram.event - INFO - Update id=70023481 is handled. Duration 437 ms by bot id=8684869199
+2026-03-11 07:25:35,811 - aiogram.event - INFO - Update id=70023482 is handled. Duration 421 ms by bot id=8684869199
+2026-03-11 07:25:36,833 - aiogram.event - INFO - Update id=70023483 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 07:25:37,778 - aiogram.event - INFO - Update id=70023484 is handled. Duration 407 ms by bot id=8684869199
+2026-03-11 07:25:38,793 - aiogram.event - INFO - Update id=70023485 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:25:39,659 - aiogram.event - INFO - Update id=70023486 is handled. Duration 250 ms by bot id=8684869199
+2026-03-11 07:25:41,920 - aiogram.event - INFO - Update id=70023487 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:25:42,278 - aiogram.event - INFO - Update id=70023488 is not handled. Duration 0 ms by bot id=8684869199
+2026-03-11 07:25:42,279 - aiogram.event - ERROR - Cause exception while process update id=70023488 by bot id=8684869199
+NameError: name 'get_user' is not defined
+Traceback (most recent call last):
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\code100\mp3bot\handlers\profile.py", line 32, in show_trader_profile
+    avg_deal = calculate_avg_deal_value(user_id)
+  File "c:\code100\mp3bot\database\models.py", line 81, in calculate_avg_deal_value
+    user = get_user(user_id)
+NameError: name 'get_user' is not defined
+2026-03-11 07:25:49,292 - aiogram.event - INFO - Update id=70023489 is handled. Duration 359 ms by bot id=8684869199
+2026-03-11 07:25:50,742 - aiogram.event - INFO - Update id=70023490 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:25:51,740 - aiogram.event - INFO - Update id=70023491 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:25:52,535 - aiogram.event - INFO - Update id=70023492 is handled. Duration 406 ms by bot id=8684869199
+2026-03-11 07:25:53,312 - aiogram.event - INFO - Update id=70023493 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:25:57,298 - aiogram.event - INFO - Update id=70023494 is handled. Duration 405 ms by bot id=8684869199
+2026-03-11 07:26:00,408 - aiogram.event - INFO - Update id=70023495 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:26:01,563 - aiogram.event - INFO - Update id=70023496 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:26:02,615 - aiogram.event - INFO - Update id=70023497 is handled. Duration 405 ms by bot id=8684869199
+2026-03-11 07:26:03,459 - aiogram.event - INFO - Update id=70023498 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 07:26:04,749 - aiogram.event - INFO - Update id=70023499 is handled. Duration 421 ms by bot id=8684869199
+2026-03-11 07:26:05,634 - aiogram.event - INFO - Update id=70023500 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:26:06,068 - aiogram.event - INFO - Update id=70023501 is not handled. Duration 0 ms by bot id=8684869199
+2026-03-11 07:26:06,069 - aiogram.event - ERROR - Cause exception while process update id=70023501 by bot id=8684869199
+NameError: name 'get_user' is not defined
+Traceback (most recent call last):
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\code100\mp3bot\handlers\profile.py", line 32, in show_trader_profile
+    avg_deal = calculate_avg_deal_value(user_id)
+  File "c:\code100\mp3bot\database\models.py", line 81, in calculate_avg_deal_value
+    user = get_user(user_id)
+NameError: name 'get_user' is not defined
+2026-03-11 07:27:22,882 - aiogram.event - INFO - Update id=70023502 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:27:23,746 - aiogram.event - INFO - Update id=70023503 is not handled. Duration 0 ms by bot id=8684869199
+2026-03-11 07:27:23,746 - aiogram.event - ERROR - Cause exception while process update id=70023503 by bot id=8684869199
+NameError: name 'get_user' is not defined
+Traceback (most recent call last):
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\code100\mp3bot\handlers\profile.py", line 32, in show_trader_profile
+    avg_deal = calculate_avg_deal_value(user_id)
+  File "c:\code100\mp3bot\database\models.py", line 81, in calculate_avg_deal_value
+    user = get_user(user_id)
+NameError: name 'get_user' is not defined
+2026-03-11 07:27:27,372 - aiogram.event - INFO - Update id=70023504 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:27:37,252 - aiogram.event - INFO - Update id=70023505 is handled. Duration 405 ms by bot id=8684869199
+2026-03-11 07:27:38,970 - aiogram.event - INFO - Update id=70023506 is handled. Duration 578 ms by bot id=8684869199
+2026-03-11 07:27:40,912 - aiogram.event - INFO - Update id=70023507 is handled. Duration 625 ms by bot id=8684869199
+2026-03-11 07:27:42,325 - aiogram.event - INFO - Update id=70023508 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:27:43,861 - aiogram.event - INFO - Update id=70023509 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:27:44,972 - aiogram.event - INFO - Update id=70023510 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:27:46,249 - aiogram.event - INFO - Update id=70023511 is handled. Duration 593 ms by bot id=8684869199
+2026-03-11 07:27:48,088 - aiogram.event - INFO - Update id=70023512 is handled. Duration 406 ms by bot id=8684869199
+2026-03-11 07:27:49,057 - aiogram.event - INFO - Update id=70023513 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:27:50,275 - aiogram.event - INFO - Update id=70023514 is handled. Duration 407 ms by bot id=8684869199
+2026-03-11 07:27:50,953 - aiogram.event - INFO - Update id=70023515 is not handled. Duration 16 ms by bot id=8684869199
+2026-03-11 07:27:50,954 - aiogram.event - ERROR - Cause exception while process update id=70023515 by bot id=8684869199
+NameError: name 'get_user' is not defined
+Traceback (most recent call last):
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\code100\mp3bot\handlers\profile.py", line 32, in show_trader_profile
+    avg_deal = calculate_avg_deal_value(user_id)
+  File "c:\code100\mp3bot\database\models.py", line 81, in calculate_avg_deal_value
+    user = get_user(user_id)
+NameError: name 'get_user' is not defined
+2026-03-11 07:27:53,019 - aiogram.event - INFO - Update id=70023516 is handled. Duration 421 ms by bot id=8684869199
+2026-03-11 07:27:54,337 - aiogram.event - INFO - Update id=70023517 is handled. Duration 358 ms by bot id=8684869199
+2026-03-11 07:27:57,603 - aiogram.event - INFO - Update id=70023518 is handled. Duration 562 ms by bot id=8684869199
+2026-03-11 07:27:59,343 - aiogram.event - INFO - Update id=70023519 is handled. Duration 657 ms by bot id=8684869199
+2026-03-11 07:28:01,271 - aiogram.event - INFO - Update id=70023520 is handled. Duration 594 ms by bot id=8684869199
+2026-03-11 07:28:11,096 - aiogram.event - INFO - Update id=70023521 is handled. Duration 469 ms by bot id=8684869199
+2026-03-11 07:36:39,484 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 07:36:39,866 - aiogram.dispatcher - INFO - Run polling for bot @SecuMMabot id=8684869199 - 'SecuMMa'
+2026-03-11 07:36:51,033 - aiogram.event - INFO - Update id=70023522 is handled. Duration 437 ms by bot id=8684869199
+2026-03-11 07:36:52,978 - aiogram.event - INFO - Update id=70023523 is handled. Duration 407 ms by bot id=8684869199
+2026-03-11 07:36:57,533 - aiogram.event - INFO - Update id=70023524 is handled. Duration 406 ms by bot id=8684869199
+2026-03-11 07:36:58,460 - aiogram.event - INFO - Update id=70023525 is handled. Duration 469 ms by bot id=8684869199
+2026-03-11 07:36:59,489 - aiogram.event - INFO - Update id=70023526 is handled. Duration 389 ms by bot id=8684869199
+2026-03-11 07:36:59,988 - aiogram.event - INFO - Update id=70023527 is not handled. Duration 14 ms by bot id=8684869199
+2026-03-11 07:36:59,988 - aiogram.event - ERROR - Cause exception while process update id=70023527 by bot id=8684869199
+NameError: name 'get_user' is not defined
+Traceback (most recent call last):
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\code100\mp3bot\handlers\profile.py", line 32, in show_trader_profile
+    avg_deal = calculate_avg_deal_value(user_id)
+  File "c:\code100\mp3bot\database\models.py", line 81, in calculate_avg_deal_value
+    user = get_user(user_id)
+NameError: name 'get_user' is not defined
+2026-03-11 07:37:02,907 - aiogram.event - INFO - Update id=70023528 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:37:05,345 - aiogram.event - INFO - Update id=70023529 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:37:09,264 - aiogram.event - INFO - Update id=70023530 is handled. Duration 578 ms by bot id=8684869199
+2026-03-11 07:37:11,280 - aiogram.event - INFO - Update id=70023531 is handled. Duration 625 ms by bot id=8684869199
+2026-03-11 07:37:13,910 - aiogram.event - INFO - Update id=70023532 is handled. Duration 672 ms by bot id=8684869199
+2026-03-11 07:37:19,901 - aiogram.event - INFO - Update id=70023533 is handled. Duration 609 ms by bot id=8684869199
+2026-03-11 07:37:25,237 - aiogram.event - INFO - Update id=70023534 is handled. Duration 389 ms by bot id=8684869199
+2026-03-11 07:37:26,865 - aiogram.event - INFO - Update id=70023535 is handled. Duration 389 ms by bot id=8684869199
+2026-03-11 07:37:28,379 - aiogram.event - INFO - Update id=70023536 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:37:30,532 - aiogram.event - INFO - Update id=70023537 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:37:31,472 - aiogram.event - INFO - Update id=70023538 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 07:37:35,517 - aiogram.event - INFO - Update id=70023539 is handled. Duration 437 ms by bot id=8684869199
+2026-03-11 07:37:36,607 - aiogram.event - INFO - Update id=70023540 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:37:37,735 - aiogram.event - INFO - Update id=70023541 is handled. Duration 437 ms by bot id=8684869199
+2026-03-11 07:37:51,544 - aiogram.event - INFO - Update id=70023542 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:37:52,737 - aiogram.event - INFO - Update id=70023543 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:37:53,744 - aiogram.event - INFO - Update id=70023544 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:37:57,960 - aiogram.event - INFO - Update id=70023545 is handled. Duration 608 ms by bot id=8684869199
+2026-03-11 07:37:59,934 - aiogram.event - INFO - Update id=70023546 is handled. Duration 655 ms by bot id=8684869199
+2026-03-11 07:38:01,389 - aiogram.event - INFO - Update id=70023547 is handled. Duration 609 ms by bot id=8684869199
+2026-03-11 07:38:06,057 - aiogram.event - INFO - Update id=70023548 is handled. Duration 250 ms by bot id=8684869199
+2026-03-11 07:38:07,284 - aiogram.event - INFO - Update id=70023549 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:38:08,630 - aiogram.event - INFO - Update id=70023550 is handled. Duration 421 ms by bot id=8684869199
+2026-03-11 07:38:22,551 - aiogram.event - INFO - Update id=70023551 is handled. Duration 234 ms by bot id=8684869199
+2026-03-11 07:38:25,402 - aiogram.event - INFO - Update id=70023552 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:38:27,356 - aiogram.event - INFO - Update id=70023553 is handled. Duration 625 ms by bot id=8684869199
+2026-03-11 07:38:29,020 - aiogram.event - INFO - Update id=70023554 is handled. Duration 657 ms by bot id=8684869199
+2026-03-11 07:38:31,170 - aiogram.event - INFO - Update id=70023555 is handled. Duration 593 ms by bot id=8684869199
+2026-03-11 07:38:33,563 - aiogram.event - INFO - Update id=70023556 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:38:35,681 - aiogram.event - INFO - Update id=70023557 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:38:36,639 - aiogram.event - INFO - Update id=70023558 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:38:37,728 - aiogram.event - INFO - Update id=70023559 is handled. Duration 594 ms by bot id=8684869199
+2026-03-11 07:38:39,970 - aiogram.event - INFO - Update id=70023560 is handled. Duration 516 ms by bot id=8684869199
+2026-03-11 07:38:40,913 - aiogram.event - INFO - Update id=70023561 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:38:41,790 - aiogram.event - INFO - Update id=70023562 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:38:43,047 - aiogram.event - INFO - Update id=70023563 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 07:38:44,221 - aiogram.event - INFO - Update id=70023564 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 07:38:45,025 - aiogram.event - INFO - Update id=70023565 is handled. Duration 359 ms by bot id=8684869199
+2026-03-11 07:38:46,201 - aiogram.event - INFO - Update id=70023566 is handled. Duration 546 ms by bot id=8684869199
+2026-03-11 07:38:47,017 - aiogram.event - INFO - Update id=70023567 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 07:38:47,792 - aiogram.event - INFO - Update id=70023568 is handled. Duration 359 ms by bot id=8684869199
+2026-03-11 07:38:48,830 - aiogram.event - INFO - Update id=70023569 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 08:06:09,103 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 08:06:09,484 - aiogram.dispatcher - INFO - Run polling for bot @SecuMMabot id=8684869199 - 'SecuMMa'
+2026-03-11 08:06:13,423 - aiogram.event - INFO - Update id=70023570 is handled. Duration 405 ms by bot id=8684869199
+2026-03-11 08:06:14,787 - aiogram.event - INFO - Update id=70023571 is handled. Duration 422 ms by bot id=8684869199
+2026-03-11 08:06:16,552 - aiogram.event - INFO - Update id=70023572 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:24,617 - aiogram.event - INFO - Update id=70023573 is handled. Duration 562 ms by bot id=8684869199
+2026-03-11 08:06:25,937 - aiogram.event - INFO - Update id=70023574 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:27,799 - aiogram.event - INFO - Update id=70023575 is handled. Duration 609 ms by bot id=8684869199
+2026-03-11 08:06:28,935 - aiogram.event - INFO - Update id=70023576 is handled. Duration 359 ms by bot id=8684869199
+2026-03-11 08:06:29,943 - aiogram.event - INFO - Update id=70023577 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:30,815 - aiogram.event - INFO - Update id=70023578 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:31,589 - aiogram.event - INFO - Update id=70023579 is not handled. Duration 16 ms by bot id=8684869199
+2026-03-11 08:06:31,591 - aiogram.event - ERROR - Cause exception while process update id=70023579 by bot id=8684869199
+NameError: name 'get_user' is not defined
+Traceback (most recent call last):
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\code100\mp3bot\handlers\profile.py", line 32, in show_trader_profile
+    avg_deal = calculate_avg_deal_value(user_id)
+  File "c:\code100\mp3bot\database\models.py", line 81, in calculate_avg_deal_value
+    user = get_user(user_id)
+NameError: name 'get_user' is not defined
+2026-03-11 08:06:33,324 - aiogram.event - INFO - Update id=70023580 is handled. Duration 358 ms by bot id=8684869199
+2026-03-11 08:06:34,802 - aiogram.event - INFO - Update id=70023581 is handled. Duration 421 ms by bot id=8684869199
+2026-03-11 08:06:36,973 - aiogram.event - INFO - Update id=70023582 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:38,581 - aiogram.event - INFO - Update id=70023583 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:39,861 - aiogram.event - INFO - Update id=70023584 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:42,652 - aiogram.event - INFO - Update id=70023585 is handled. Duration 546 ms by bot id=8684869199
+2026-03-11 08:06:44,356 - aiogram.event - INFO - Update id=70023586 is handled. Duration 610 ms by bot id=8684869199
+2026-03-11 08:06:45,748 - aiogram.event - INFO - Update id=70023587 is handled. Duration 593 ms by bot id=8684869199
+2026-03-11 08:06:47,644 - aiogram.event - INFO - Update id=70023588 is handled. Duration 594 ms by bot id=8684869199
+2026-03-11 08:06:49,462 - aiogram.event - INFO - Update id=70023589 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:50,465 - aiogram.event - INFO - Update id=70023590 is handled. Duration 358 ms by bot id=8684869199
+2026-03-11 08:06:51,538 - aiogram.event - INFO - Update id=70023591 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:53,122 - aiogram.event - INFO - Update id=70023592 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:54,056 - aiogram.event - INFO - Update id=70023593 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:06:55,656 - aiogram.event - INFO - Update id=70023594 is handled. Duration 390 ms by bot id=8684869199
+2026-03-11 08:09:41,381 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 08:09:41,751 - aiogram.dispatcher - INFO - Run polling for bot @SecuMMabot id=8684869199 - 'SecuMMa'
+2026-03-11 08:09:46,018 - aiogram.event - INFO - Update id=70023595 is handled. Duration 407 ms by bot id=8684869199
+2026-03-11 08:09:46,876 - aiogram.event - INFO - Update id=70023596 is not handled. Duration 30 ms by bot id=8684869199
+2026-03-11 08:09:46,877 - aiogram.event - ERROR - Cause exception while process update id=70023596 by bot id=8684869199
+NameError: name 'get_user' is not defined
+Traceback (most recent call last):
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\al\AppData\Roaming\Python\Python39\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\code100\mp3bot\handlers\profile.py", line 37, in show_trader_profile
+    avg_deal = calculate_avg_deal_value(user_id)
+  File "c:\code100\mp3bot\database\models.py", line 81, in calculate_avg_deal_value
+    user = get_user(user_id)
+NameError: name 'get_user' is not defined
+2026-03-11 08:09:58,012 - aiogram.event - INFO - Update id=70023597 is handled. Duration 391 ms by bot id=8684869199
+2026-03-11 08:09:59,173 - aiogram.event - INFO - Update id=70023598 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:10:00,030 - aiogram.event - INFO - Update id=70023599 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:10:01,026 - aiogram.event - INFO - Update id=70023600 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:10:01,825 - aiogram.event - INFO - Update id=70023601 is handled. Duration 375 ms by bot id=8684869199
+2026-03-11 08:10:06,029 - aiogram.event - INFO - Update id=70023602 is handled. Duration 407 ms by bot id=8684869199
+2026-03-11 09:18:10,696 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 09:18:11,350 - aiogram.dispatcher - INFO - Run polling for bot @SecuMMabot id=8684869199 - 'SecuMMa'
